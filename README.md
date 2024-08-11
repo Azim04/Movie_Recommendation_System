@@ -8,5 +8,5 @@ Feel free to download this project ! <br>
 
 <h2>Clone the project</h2>
 Run the following command in the terminal of a newly created directory <br> 
-#  Current flow 
-      App's text editor > AutoHotKey > SprintBoot Integration >  ChatGPT APIs       
+
+    git clone 
