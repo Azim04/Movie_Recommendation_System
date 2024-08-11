@@ -25,7 +25,7 @@ Run the following command in the terminal: <br> <br>
     git clone https://github.com/Azim04/Movie_Recommendation_System.git
 
 Once the project is cloned, open it in any code editor (Pycharm is preferred) <br>
-Run the following commands in terminal of the same directory which contains **manage.py** file <br><br>
+Run the following commands in terminal of the same directory which contains **manage.py** file <br>
 
 
     python manage.py makemigrations
@@ -41,25 +41,25 @@ In order to containerize the application, install Docker
 <h3>Windows:</h3>
     Download Docker Desktop https://www.docker.com/products/docker-desktop/ <br>
 <h3>Linux & Mac</h3>
-    Download docker from command line: <br> <br>
+    Download docker from command line: <br> 
 
         sudo apt install docker.io
 
 # Containerize 
   Once Docker is successfully installed in the system, navigate into the project where Dockerfile is located <br>
-  In the terminal, run the following command to build a Docker Image: <br> <br>
+  In the terminal, run the following command to build a Docker Image: <br> 
 
       docker build . -t movie_recommendation_system
 
-  Once the image is created, verify it using the command:<br><br>
+  Once the image is created, verify it using the command:<br>
 
       docker images
 
-  After the image is created, run the container using this image: <br><br>
+  After the image is created, run the container using this image: <br>
 
       docker run -d -p 8000:8000 movie_recommendation_system
 
-  Verify whether the container is running: <br><br>
+  Verify whether the container is running: <br>
 
       docker ps 
 
