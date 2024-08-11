@@ -19,13 +19,13 @@ Feel free to download this project ! <br>
 Refer to the Django documentation --> https://docs.djangoproject.com/en/5.1/
 
 <h2>Clone the project</h2>
-Run the following command in the terminal: <br> 
+Run the following command in the terminal: <br> <br>
 
 
     git clone https://github.com/Azim04/Movie_Recommendation_System.git
 
 Once the project is cloned, open it in any code editor (Pycharm is preferred) <br>
-Run the following commands in terminal of the same directory which contains **manage.py** file <br>
+Run the following commands in terminal of the same directory which contains **manage.py** file <br><br>
 
 
     python manage.py makemigrations
