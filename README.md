@@ -45,7 +45,7 @@ In order to containerize the application, install Docker
 
         sudo apt install docker.io
 
-<h3>Containerize</h3> 
+<h2>Containerize</h2> 
   Once Docker is successfully installed in the system, navigate into the project where Dockerfile is located <br>
   In the terminal, run the following command to build a Docker Image: <br> 
 
