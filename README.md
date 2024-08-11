@@ -9,4 +9,4 @@ Feel free to download this project ! <br>
 <h2>Clone the project</h2>
 Run the following command in the terminal of a newly created directory <br> 
 # Clone
-    git clone https://github.com/Azim04/Movie_Recommendation_System.git
+        git clone https://github.com/Azim04/Movie_Recommendation_System.git        
