@@ -41,7 +41,7 @@ In order to containerize the application, install Docker
 <h3>Windows:</h3>
     Download Docker Desktop https://www.docker.com/products/docker-desktop/ <br>
 <h3>Linux & Mac</h3>
-    Download docker from command line: <br> 
+    Download docker from command line: <br> <br>
 
         sudo apt install docker.io
 
@@ -63,4 +63,4 @@ In order to containerize the application, install Docker
 
       docker ps 
 
-  Once, the container is running, access the website on http://<your-device-ip>:8000
+  Once, the container is running, access the website on http://your-device-ip:8000
