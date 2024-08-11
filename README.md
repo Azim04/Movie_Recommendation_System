@@ -43,24 +43,24 @@ In order to containerize the application, install Docker
 <h3>Linux & Mac</h3>
     Download docker from command line: <br> <br>
 
-        sudo apt install docker.io
+    sudo apt install docker.io
 
 <h2>Containerize</h2> 
   Once Docker is successfully installed in the system, navigate into the project where Dockerfile is located <br>
-  In the terminal, run the following command to build a Docker Image: <br> 
+  In the terminal, run the following command to build a Docker Image: <br> <br>
 
-      docker build . -t movie_recommendation_system
+    docker build . -t movie_recommendation_system
 
   Once the image is created, verify it using the command:<br>
 
-      docker images
+    docker images
 
   After the image is created, run the container using this image: <br>
 
-      docker run -d -p 8000:8000 movie_recommendation_system
+    docker run -d -p 8000:8000 movie_recommendation_system
 
   Verify whether the container is running: <br>
 
-      docker ps 
+    docker ps 
 
   Once, the container is running, access the website on http://your-device-ip:8000
