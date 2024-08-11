@@ -13,7 +13,7 @@ Feel free to download this project ! <br>
 <h2>Install Django in the system</h2>
     Once python is downloaded and successfully installed in the system, install Django in your system by running the following command:
 
-        pip install django
+    pip install django
     
 Refer to the Django documentation --> https://docs.djangoproject.com/en/5.1/
 
@@ -26,10 +26,8 @@ Once the project is cloned, open it in any code editor (Pycharm is preferred) <b
 Run the following commands in terminal of the same directory which contains **manage.py** file <br>
 
     python manage.py makemigrations
-    
 
     python manage.py migrate 
-    
 
     python manage.py runserver
 
