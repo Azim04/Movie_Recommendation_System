@@ -55,7 +55,7 @@ In order to containerize the application, install Docker
 
     docker images
 
-  After the image is created, run the container using this image: <br>
+  After the image is created, run the container in detached mode on port 8000 using the above built image: <br>
 
     docker run -d -p 8000:8000 movie_recommendation_system
 
