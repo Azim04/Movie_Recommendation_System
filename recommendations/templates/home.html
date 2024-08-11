@@ -1,0 +1,64 @@
+<!-- recommendations\templates\home.html -->
+
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<style>
+    .search-box {
+        border: 2px solid #007bff; /* Blue outline */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    .search-button {
+        background-color: #007bff; /* Blue color */
+        border-color: #007bff; /* Blue border color */
+        color: white; /* Text color */
+    }
+
+    .search-button:hover {
+        background-color: #0056b3; /* Darker blue color on hover */
+        border-color: #0056b3; /* Darker blue border color on hover */
+    }
+
+    .movie-card,
+    .title-container {
+        border: 2px solid ##ffffff; /* White outline */
+        border-radius: 10px; /* Rounded corners */
+        transition: transform 0.3s; /* Smooth transition */
+    }
+
+    .movie-card:hover,
+    .title-container:hover {
+        transform: scale(1.05); /* Enlarge the card by 5% on hover */
+    }
+
+    .bold-text {
+    font-weight:500;
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="title-container">
+        <h1 class="mb-4">Movie Recommendation System</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <form class="form-inline mb-4" action="{% url 'search_movies' %}" method="GET">
+        <input class="form-control mr-sm-2 search-box" type="search" placeholder="Search Movies" aria-label="Search" name="query">
+        <button class="btn btn-outline-primary my-2 my-sm-0 search-button" type="submit">Search</button>
+    </form>
+
+    <div class="row">
+        {% for movie in movies %}
+            <div class="col-md-4 mb-3">
+                <div class="card movie-card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'movie_detail' movie.ITEM_ID %}">{{ movie.TITLE }}</a></h5>
+                        <p class="card-text"><span class="bold-text">Genres : </span>{{ movie.GENRES }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
